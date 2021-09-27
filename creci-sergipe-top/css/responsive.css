@@ -1,0 +1,89 @@
+/* Default */
+
+.containerCreciSergipe {
+    width: 1310px;
+    margin: 0 auto;
+}
+
+/* Normal desktop :1200px. */
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+    .containerCreciSergipe {
+        width: 1310px;
+    }
+}
+
+/* Normal desktop :1200px. */
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+    .containerCreciSergipe {
+        width: 75%;
+    }
+}
+
+
+/* Normal desktop :992px. */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .containerCreciSergipe {
+        width: 80%;
+    }
+}
+
+
+/* Tablet desktop :768px. */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .containerCreciSergipe {
+        width: 85%;
+    }
+}
+
+
+/* small mobile :320px. */
+
+@media (max-width: 767px) {
+    .containerCreciSergipe {
+        width: 90%;
+    }
+}
+
+
+/* Large Mobile :480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .containerCreciSergipe {
+        width: 94%;
+    }
+}
+
+
+/* EXIBE TODOS OS CAMPOS(NECESSÁRIOS) DO TEMA EM UMA ÚNICA LINHA */
+
+.linha-botoes {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+.linha {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*  BARRA LATERAL DOS TÍTULOS NA FRONT PAGE*/
+.section-title-general h2{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    line-height: 1;
+    color: #074f57;
+    margin-bottom: 15px;
+    border-left: solid 7px #adb5bd; /* BORDA (ESQUERDA) AO LADO DO TÍTULO */
+    padding-left: 5px;
+    transition: all 0.25s;
+  }

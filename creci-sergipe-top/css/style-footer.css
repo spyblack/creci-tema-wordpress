@@ -1,0 +1,403 @@
+footer {
+    font-size: 0.9rem;
+    color: black;
+    background: #074f57;
+    margin-top: 20px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+
+/* Modo desktop padrão entre (1024 a 1380) */
+
+footer .gridFooter {
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    grid-template-rows: 6fr;
+    grid-template-areas: "logoFooter logoFooter" "locationFooter apresentationFooter" "hourFooter apresentationFooter" "telephoneFooter apresentationFooter" "cnpjFooter redeFooter" "copyFooter copyFooter" "barraFooter barraFooter" "redesFooter redesFooter";
+}
+
+footer .logoFooterCreci img {
+    object-fit: cover;
+    height: 70px;
+    padding-top: 20px;
+}
+
+
+/* Descrição, apresentação... */
+
+footer .apresentacaoFooterCreci p {
+    grid-area: apresentationFooter;
+    text-align: justify;
+    padding: 20px 20px 20px 20px;
+    color: white;
+    font-size: 0.8rem;
+}
+
+
+/* Barra de logo e apresentação */
+
+footer .barraFooterCreci {
+    grid-area: barraFooter;
+    background: #423c3c;
+    font-weight: lighter;
+    align-self: center;
+    justify-content: center;
+    text-align: justify;
+    color: white;
+    box-shadow: 3px 0 3px #07474e;
+}
+
+
+/* Endereço */
+
+footer .gridFooter .locationFooter {
+    grid-area: locationFooter;
+    color: #fff;
+    font-size: 15px;
+    padding-top: 30px;
+}
+
+
+/* Horario de Funcionamento */
+
+footer .gridFooter .hourFooter {
+    grid-area: hourFooter;
+    color: #fff;
+    font-size: 15px;
+}
+
+
+/* Telefone */
+
+footer .gridFooter .telephoneFooter {
+    grid-area: telephoneFooter;
+    color: #fff;
+    font-size: 15px;
+}
+
+
+/* CNPJ */
+
+footer .gridFooter .cnpjFooter {
+    grid-area: cnpjFooter;
+    color: #fff;
+    font-size: 15px;
+}
+
+
+/* Redes sociais */
+
+footer .gridFooter .redeSociais {
+    grid-area: redesFooter;
+    background: #07474e;
+    padding: 5px 3px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+/* CENTRALIZANDO NA VERTICAL */
+
+.redeSociais div {
+    margin-top: 11px;
+}
+
+.redeSociais p {
+    margin-top: 11px;
+}
+
+.siga-nos {
+    color: white;
+    margin-right: 10px;
+    font-size: 15px;
+    margin-top: -1.5px;
+}
+
+
+/* ESTILO DO TEXTO DAS REDES SOCIAIS */
+
+.redeSociais a {
+    margin-right: 10px;
+    font-size: 15px;
+    color: white;
+}
+
+.redeSociais i {
+    margin-left: 10px;
+    transition: all 0.3s;
+}
+
+
+/*  Hover nos icons das redes sociais */
+
+.hovered_icon_youtube {
+    color: red;
+    text-decoration: inherit;
+    transition: 0.1s;
+}
+
+.hovered_icon_face {
+    color: #5babed;
+    text-decoration: inherit;
+    transition: 0.1s;
+}
+
+.hovered_icon_twitter {
+    color: #1da1f2;
+    text-decoration: inherit;
+    transition: 0.1s;
+}
+
+.hovered_icon_instagram {
+    color: #e48bcd;
+    text-decoration: inherit;
+    transition: 0.1s;
+}
+
+.hovered_text {
+    color: #DCDCDC;
+    text-decoration: inherit;
+    transition: all 0.1s;
+}
+
+
+/* Tirando link do icone do footer */
+
+footer .gridFooter .redeSociais a {
+    text-decoration: none;
+}
+
+
+/* Copyright */
+
+footer .gridFooter .copyrightCreci {
+    grid-area: copyFooter;
+    background: #04343a;
+    padding: 10px 5px;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.grid-contato .map {
+    width: 100%;
+}
+
+
+/* MOBILE & TABLET */
+
+@media(max-width: 768px) {
+    footer .gridFooter {
+        display: block;
+    }
+    /* Endereço, horario, telefone e cnpj mobile */
+    footer .gridFooter .locationFooter,
+    footer .gridFooter .hourFooter,
+    footer .gridFooter .telephoneFooter,
+    footer .gridFooter .cnpjFooter {
+        display: block;
+        font-size: 0.9rem;
+    }
+    /* Icon Redes sociais no mobile*/
+    footer .gridFooter .redeSociais {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    .redeSociais div i {
+        font-size: 1rem;
+        display: inline-flex;
+        padding: 0 10px;
+    }
+    /* Copyright no mobile */
+    footer .gridFooter .copyrightCreci {
+        font-size: 0.6rem;
+        align-self: center;
+    }
+    /* Copyright no mobile */
+    footer .gridFooter .copyrightCreci span {
+        display: inline-block;
+    }
+    .infoEndereco {
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .centraliz {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* REDES SOCIAIS EM TELAS MENORES A PARTIR DE 414px */
+
+@media(max-width: 414px) {
+    .siga-nos {
+        font-size: 15px;
+    }
+    .redeSociais div i {
+        font-size: 20px;
+        margin-right: -20px;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .len-texto-footer {
+        display: none;
+    }
+}
+
+
+/* RESPONSIVIDADE DO LOGO E DO TEXTO DE APRESENTAÇÃO */
+
+@media(max-width: 603px) {
+    .content-p {
+        width: 100%;
+        padding-top: 20px;
+    }
+}
+
+
+/* GRID DE CONTATO E MAPA */
+
+.gridFooter-cont-serv {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(1, 1vw);
+    grid-gap: 0.1rem;
+}
+
+
+/* GRID DO logo */
+
+.grid-contato {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+
+/* GRID DE APRESENTAÇÂO */
+
+.grid-serv {
+    grid-column-start: 4;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botoes-footer h2 {
+    font-size: 20px;
+    color: white;
+}
+
+.servicosrap {
+    color: white;
+    text-align: center;
+}
+
+
+/* ESTILO DA LETRA */
+
+.servicosrap a {
+    color: #0C6F7A;
+    text-decoration: none;
+    font-family: Arial;
+    padding: 5px;
+    transition: all 0.3s ease-out;
+}
+
+
+/* BOTÕES DE SERVIÇOS */
+
+.botaoServ {
+    width: 220px;
+    background-color: #ffffffe0;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all 0.3s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.botaoServ:hover {
+    background: #423c3c;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* HOVER DA LETRA */
+
+.botaoServ:hover a {
+    color: #fff;
+}
+
+
+/* ESTILO DO HR */
+
+.estilo-hr {
+    background-color: white;
+    padding-bottom: 0px;
+}
+
+.estilo-hr {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 9;
+    grid-row-end: 10;
+}
+
+
+/* TÍTULO SOBRE O CRECI */
+
+.centraliz h3 {
+    margin-top: 18px;
+    margin-bottom: -10px;
+    color: #fff;
+    font-size: 23px;
+}
+
+
+/* HR */
+
+.estilo-hr1 {
+    margin-bottom: -18px;
+    width: 365px;
+}
+
+@media(max-width: 414px) {
+    .estilo-hr1 {
+        width: 100%;
+    }
+    /* CENTRALIZANDO TEXTO INFORMAÇÕES NO RODAPÉ */
+    .infoEndereco {
+        text-align: center;
+    }
+}
+
+.gridFooter-mobile {
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    grid-template-rows: 6fr;
+}

@@ -1,0 +1,41 @@
+.owl-carouselClube img {
+    margin: 0 auto;
+    height: 25vh;
+    /*DEIXA A IMAGEM CORTADA SEM DISTORÇÃO*/
+    object-fit: cover;
+}
+
+/*TELA MENOR*/
+@media(max-width: 1094px) {
+    .owl-carouselClube img {
+        height: 30vh;
+        width: 100% ;
+
+    }
+}
+
+@media(max-width: 780px) {
+    .owl-carouselClube img {
+        height: 50vh;
+    }
+}
+/*BOTÃO DO SITE CLUBE CORRETOR */
+
+
+.ButtonCLUBE {
+    padding: 7px 6px;
+    font-size: 14px;
+    /* margin-top: 6px; */
+    display:inline-block;
+}
+
+
+a.titulo-postCLUBE {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(23, 44, 35);
+}
+
+a.titulo-postCLUBE:hover {
+    text-shadow: 0 0 10px white;
+}

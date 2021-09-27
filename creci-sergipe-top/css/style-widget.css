@@ -1,0 +1,67 @@
+/* ESTILO DO WIDGET */
+
+/* Conteúdo Geral*/
+
+.estilo-widget {
+    margin-bottom: 15px;
+}
+
+/* Conteúdo Específico */
+
+.estilo-widget img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.estilo-widget span {
+    color: #000;
+}
+
+.estilo-widget p {
+    color: #000;
+}
+
+.estilo-widget {
+    margin-bottom: 15px;
+}
+
+/* MOBILE */
+
+/* DESABILITA O WIDGET EM TELAS A PARTIR DE 799px */
+
+@media (max-width: 799px) {
+    .estilo-widget {
+        display: none;
+    }
+}
+
+/* DESABILITA O WIDGET MOBILE EM TELAS A PARTIR DE 799px */
+
+@media (min-width: 799px) {
+    .estilo-widget-mobile {
+        display: none;
+    }
+}
+
+/* HABILITA O WIDGET EM TELAS A PARTIR DE 798px E MENORES */
+
+@media (max-width: 798px) {
+    .estilo-widget-mobile {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.estilo-widget-mobile img {
+    width: 100%;
+}
+
+.estilo-widget-mobile span {
+    color: #000;
+}
+
+.estilo-widget-mobile p {
+    color: #000;
+}
+
+

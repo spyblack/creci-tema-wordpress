@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+/* Padrões gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* INICIO - Menu Principal para todas as telas (cor e fixo no topo da */
+
+.navigationMenuMain {
+    background-color: #074f57;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+/* Conteudo geral do menu - RESPONSIVIDADE */
+
+.containerCreciSergipe li {
+    color: #fff;
+    transition: background-color 0.5s;
+}
+
+/* Permanece o item Pai selecionado ao selecionar o item filho */
+
+.navigationMenuMain div>ul>li:hover {
+    background-color: #0c6f7a;
+}
+
+/* Centralizando todos os itens do menu, definido tamanho e posição */
+
+.navigationMenuMain ul.list-menu {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    height: 40px;
+    padding-bottom: 5px;
+}
+
+/* Menu e submenu (espaçamento entre os dois, cores, tamanho) */
+
+.navigationMenuMain ul li ul {
+    display: none;
+    min-width: 150px;
+    position: absolute;
+    list-style: none;
+    background-color: #102629;
+    /* Borda no final dos subitens */
+    border-bottom: 1px solid rgb(9, 19, 20);
+    transition: background-color 0.5s;
+}
+
+/* Subitens em um um bloco */
+
+.navigationMenuMain div>ul>li:hover ul {
+    display: block;
+}
+
+@media (min-width: 1400px) {
+    /* Desativando menu mobile */
+    #idButtonMainMenu {
+        display: none;
+    }
+    /* Evita de bugar o menu quando sua tela é posta como maior que 599px após uma tela menor com o menu mobile aberto */
+    .navigationMenuMain ul.list-menu {
+        display: flex !important;
+        transition: background-color 1s;
+        height: 45px;
+        transition: all;
+    }
+    /* MENU */
+    .navigationMenuMain ul.list-menu li {
+        border-radius: 0 5px 0 0;
+    }
+    /* Nome do menu com ou sem link */
+    .navigationMenuMain ul.list-menu li a {
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: whitesmoke;
+        font-weight: bold;
+        font-size: 15px;
+        display: block;
+        padding: 1rem 1rem 0.7rem 1rem;
+        border-radius: 0 5px 0 0;
+        transition: all 0.5s;
+    }
+    /* HOVER - Nome do menu com ou sem link */
+    .navigationMenuMain div>ul.list-menu>li>a:hover ul {
+        background: #0c6f7a;
+        display: block;
+    }
+    .navigationMenuMain div>ul.list-menu>li:hover ul {
+        display: block;
+    }
+    /* SUBMENU */
+    .navigationMenuMain>div>ul.list-menu>li>ul>li {
+        border-radius: 0;
+    }
+    /* Nome do submenu com ou sem link */
+    .navigationMenuMain>div>ul>li>ul>li>a {
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: whitesmoke;
+        font-weight: bold;
+        font-size: 15px;
+        display: block;
+        padding: 0.5rem;
+        background: #102629;
+        border-radius: 0;
+        transition: background 0.3s;
+    }
+    /* HOVER - Nome do submenu com ou sem link */
+    .navigationMenuMain div>ul>li>ul>li>a:hover {
+        background: #0c6f7a;
+    }
+    /* Desabilita campo de pesquisa mobile para telas grandes*/
+    .search_mobileCreci .form_searchMobile {
+        display: none;
+    }
+    /* HOVER - Nome do menu mobile com ou sem link */
+    .navigationMenuMain ul li a:hover, .navigationMenuMain ul li:hover {
+        background: #0c6f7a;
+    }
+    .navigationMenuMain ul li a:hover ul, .navigationMenuMain ul li:hover ul {
+        display: block;
+    }
+}
+
+/* Para telas médias */
+
+@media (max-width: 1399px) and (min-width: 1034px) {
+    /* Desativando menu mobile */
+    #idButtonMainMenu {
+        display: none;
+    }
+    /* Evita de bugar o menu quando sua tela é posta como maior que 599px após uma tela menor com o menu mobile aberto */
+    .navigationMenuMain ul.list-menu {
+        display: flex !important;
+        transition: background-color 1s;
+        height: 45px;
+        transition: all;
+    }
+    /* MENU */
+    .navigationMenuMain ul.list-menu li {
+        border-radius: 0 5px 0 0;
+    }
+    /* Nome do menu com ou sem link */
+    .navigationMenuMain ul.list-menu li a {
+        text-decoration: none;
+        font-size: 0.8rem;
+        color: whitesmoke;
+        font-weight: bold;
+        font-size: 15px;
+        display: block;
+        padding: 1rem 1rem 0.8rem 1rem;
+        border-radius: 0 5px 0 0;
+        transition: all 0.5s;
+    }
+    /* HOVER - Nome do menu com ou sem link */
+    .navigationMenuMain div>ul.list-menu>li>a:hover ul {
+        background: #0c6f7a;
+        display: block;
+    }
+    .navigationMenuMain div>ul.list-menu>li:hover ul {
+        display: block;
+    }
+    /* SUBMENU */
+    .navigationMenuMain>div>ul.list-menu>li>ul>li {
+        border-radius: 0;
+    }
+    /* Nome do submenu com ou sem link */
+    .navigationMenuMain>div>ul>li>ul>li>a {
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: whitesmoke;
+        font-weight: bold;
+        font-size: 15px;
+        display: block;
+        padding: 0.5rem;
+        background: #102629;
+        border-radius: 0;
+        transition: background 0.3s;
+    }
+    /* HOVER - Nome do submenu com ou sem link */
+    .navigationMenuMain div>ul>li>ul>li>a:hover {
+        background: #0c6f7a;
+    }
+    /* Desabilita campo de pesquisa mobile para telas grandes*/
+    .search_mobileCreci .form_searchMobile {
+        display: none;
+    }
+    /* HOVER - Nome do menu mobile com ou sem link */
+    .navigationMenuMain ul li a:hover, .navigationMenuMain ul li:hover {
+        background: #0c6f7a;
+    }
+    .navigationMenuMain ul li a:hover ul, .navigationMenuMain ul li:hover ul {
+        display: block;
+    }
+}
+
+/* Pesquisa para mobile */
+
+@media (max-width: 1039px) {
+    .search_mobileCreci .form_searchMobile {
+        display: initial;
+    }
+    .gridMainMenu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "a b";
+        height: 38px;
+    }
+    .navigationMenuMain .containerCreciSergipe {
+        justify-content: space-between;
+    }
+    .containerCreciSergipe #idMenuMain {
+        width: 100%;
+        grid-area: c;
+    }
+    .containerCreciSergipe #idButtonMainMenu {
+        grid-area: a;
+    }
+    .containerCreciSergipe .search_mobileCreci {
+        grid-area: b;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .search_mobileCreci form.form_searchMobile {
+        align-items: center;
+        display: flex;
+    }
+    .search_mobileCreci form.form_searchMobile button {
+        margin: 0 !important;
+        margin-left: 5px !important;
+        padding: 4px;
+        align-items: center;
+        padding-top: -10px;
+    }
+    .search_mobileCreci form.form_searchMobile input {
+        height: 33px;
+    }
+    section.section_redesSociaisIntranet {
+        padding: 0;
+        background: rgba(36, 36, 36, 0.938);
+        margin-bottom: 13px;
+    }
+    /* Reduzindo tamanho e espaço de icones do topo da tela */
+    .menuIntranetCreci .iconIntranetCreci {
+        font-size: 0.7rem;
+    }
+    /* Configuração para todos os icons */
+    .redesSociaisHeader a i {
+        font-size: 0.7rem;
+        padding: 0;
+    }
+    .redesSociaisHeader .contact_telefoneCreci {
+        font-size: 0.7rem;
+    }
+    /* Botão do menu mobile */
+    #idButtonMainMenu {
+        position: relative;
+        border: 2px solid #fff;
+        width: 25px;
+        padding: 0 3.5px;
+        border-radius: 10%;
+        display: block;
+        margin: 5px 0;
+    }
+    /* Botão do menu mobile */
+    #idButtonMainMenu i {
+        color: #fff;
+    }
+    /* Tamanho inicial do menu mobile */
+    .navigationMenuMain {
+        padding: 3px 0;
+        position: relative;
+    }
+    /* Fundo do menu mobile */
+    .navigationMenuMain ul.list-menu {
+        display: none;
+        background-color: #1c1c21;
+        height: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .navigationMenuMain ul li ul {
+        position: relative;
+    }
+    /* Links do menu mobile */
+    .navigationMenuMain div>ul>li>a:hover {
+        background: #102629c7;
+        padding: 8px;
+        display: block;
+    }
+    /* Borda que separa os itens do menu mobile*/
+    .navigationMenuMain ul li {
+        border-top: 0.6px solid #999;
+    }
+    /* Nome do menu mobile com link */
+    .navigationMenuMain ul li a {
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: whitesmoke;
+        font-weight: bold;
+        font-size: 15px;
+        display: block;
+        padding: 5px;
+        border-radius: 0;
+    }
+    /* HOVER - Nome do menu mobile com ou sem link */
+    .navigationMenuMain ul li a:hover, .navigationMenuMain ul li:hover {
+        background: #0c6f7a;
+    }
+    .navigationMenuMain ul li a:hover ul, .navigationMenuMain ul li:hover ul {
+        display: block;
+    }
+}

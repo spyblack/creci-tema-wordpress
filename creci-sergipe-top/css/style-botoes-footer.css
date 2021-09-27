@@ -1,0 +1,80 @@
+  .botoes-footer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  
+  .botao-footer a {
+      color: #fff;
+      /* COR DO TEXTO DO BOTAO */
+  }
+  
+  .botao-footer a:hover {
+      color: #FFF;
+      /* COR DO TEXTO DO BOTAO NO HOVER*/
+  }
+  /* ESILO GERAL DO BOTÃO */
+  
+  .botao-footer {
+      cursor: pointer;
+      font-size: 12px;
+      line-height: 30px;
+      margin: 5px;
+      width: 215px;
+      position: relative;
+      text-decoration: none;
+  }
+  
+  .botao-footer:hover {
+      text-decoration: none;
+  }
+  /* COR DE FUNDO DO BOTAO */
+  
+  .botao-1-footer {
+      background: #074f57;
+  }
+  
+  .botao-1-footer svg {
+      height: 30px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+  }
+  
+  .botao-1-footer rect {
+      fill: none;
+      stroke: #fff;
+      /* COR DO EFEITO DA BORDA DO BOTAO */
+      stroke-width: 2;
+      stroke-dasharray: 422, 0;
+      -webkit-transition: all 0.35s linear;
+      transition: all 0.35s linear;
+  }
+  
+  .botao-1-footer:hover {
+      background: rgba(225, 51, 45, 0);
+      /* letter-spacing: 1px; */
+  }
+  
+  .botao-1-footer:hover rect {
+      stroke-width: 5;
+      stroke-dasharray: 15, 310;
+      stroke-dashoffset: 48;
+      -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  /*# sourceMappingURL=style-do-botao.css.map */

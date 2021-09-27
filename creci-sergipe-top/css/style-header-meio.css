@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* GRID - divisão de logo e botoes do meio do cabeçalho */
+
+header .gridHeaderCreci {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "header-logo header-search header-button";
+    margin: 25px 0;
+}
+
+
+/* Logo */
+
+header .button-logoCreci {
+    grid-area: header-logo;
+    align-self: center;
+    display: flex
+}
+/* Pesquisar */
+
+header .search_campoCreci {
+    grid-area: header-search;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button-certificateCreci a,
+.button-TVcreci a {
+    display: flex;
+    align-items: center;
+}
+
+/*BOTÕES - RED = TV CRECI, BLUE = CERTIDÃO DE REGULARIDADE, BROWN = BOLETOS DE ANUIDADE*/
+
+.btn.red,.btn.blue,.btn.brown {
+    border-radius: 0;
+    padding-left: 50px;
+    position: relative;
+    transform: translateZ(0px);
+    transition: all 0.5s ease 0s;
+    width: 135px;
+    font-size: 11px;
+    font-family: Oswald;
+    
+}
+
+/* COR DE CADA BOTÃO */
+.btn.red{
+    color: #c5261b;
+    margin-right: 13px;
+}
+
+.btn.blue {
+    color: #1f7a8c;
+    margin-right: 13px;
+}
+
+.btn.brown {
+    color: #802f1c;
+}
+
+/* EFEITO DE CADA BOTÃO */
+.btn.red:after, .btn.blue:after, .btn.brown:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: 100% 50% 0;
+    transition: all 0.5s ease-out 0s;
+}
+
+/* <p> TEXTO DE CADA BOTÃO */
+a .tv-crecise ,
+a .cert-regularidade,
+a .bol-anuidade{
+    height: 32px;
+    width: 100%;
+    margin-left: 3px;
+    margin-bottom: 0;
+}
+
+
+/* COR AFTER */
+.btn.red:after{
+    background: #c5261b;
+}
+
+.btn.blue:after {
+    background: #1f7a8c;
+}
+
+.btn.brown:after {
+    background: #802f1c;
+}
+
+.btn:hover:after {
+    transform: scaleX(1);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+.btn.red span, .btn.blue span, .btn.brown span{
+    width: 40px;
+    height: 100%;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s linear 0s;
+}
+.btn.red span{
+    background: #c5261b;
+}
+
+.btn.red span:after, .btn.blue span:after, .btn.brown span:after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: auto 0;
+    position: absolute;
+    top: 0;
+    right: -6px;
+    bottom: 0;
+    transform: rotate(45deg);
+    transition: all 0.3s linear 0s;
+}
+
+.btn.red span:after {
+    background: #c5261b;
+}
+
+.btn.blue span {  
+    background: #1f7a8c;
+}
+
+.btn.blue span:after {
+    background: #1f7a8c;
+}
+
+.btn.brown span {
+    background: #802f1c;
+}
+
+.btn.brown span:after {
+    background: #802f1c;
+}
+
+/* BORDA */
+
+/* TV CRECI */
+.btn.red {
+    border: 3px solid #c5261b;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.btn.red:hover span {
+    color: rgb(219, 35, 35);
+}
+
+/* CERTIDÃO DE REGULARIDADE */
+.btn.blue {
+    border: 3px solid #1f7a8c;
+    background: #fff;
+    border-radius: 4px
+}
+
+.btn.blue:hover span {
+    color: #1f7a8c;
+}
+
+
+/* BOLETOS DE ANUIDADE */
+
+.btn.brown {
+    border: 3px solid #802f1c;
+    background: #fff;
+    border-radius: 4px
+}
+
+.btn.brown:hover span {
+    color: #802f1c;
+}
+
+/* DETALHES COMUNS AOS TRÊS BOTÕES */
+.btn.red:hover,
+.btn.red span,
+.btn.blue:hover,
+.btn.blue span, 
+.btn.brown:hover,
+.btn.brown span{
+    color: #fff;
+}
+
+.btn.red:hover span, .btn.red:hover span:after,
+.btn.blue:hover span, .btn.blue:hover span:after,
+.btn.brown:hover span,.btn.brown:hover span:after {
+    background: #fff;
+}
+
+/* GRID */
+header .buttons-fieldCreci {
+    grid-area: header-button;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*ICONES TAMANHOS, COR, FUNDO. */
+
+header .buttons-fieldCreci i {
+    font-size: 25px;
+    margin-left: 1px;
+    line-height: 35px;
+    margin-top: 7px;
+}
+
+/* BOTÃO DE BUSCA DESKTOP */
+
+/* Estilo do Input */
+
+.input-busca {
+    outline: none;
+    border: 2px solid #dadce0;
+    padding: 5px 6px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.input-busca:focus {
+    border: 2px solid #074f57;
+}
+
+.form-control {
+    border: 2px solid #074f57;
+}
+
+.input-buscamobile {
+    outline: none;
+    border: 2px solid #dadce0;
+    padding: 5px 6px;
+    font-size: 13px;
+    border-radius: 5px;
+    display: flex;
+    width: 80%;
+    transition: all 0.5s;
+}
+
+.input-buscamobile:focus {
+    border: 2px solid #fff380;
+}
+
+.botao-buscamobile {
+    border: 0;
+    background: transparent;
+    color: #fff;
+    display:  -webkit-flex;
+}
+
+
+.form_searchCreci {
+    margin-right: 5px;
+}
+
+.form_searchCreci>button {
+    border: 0;
+    background: transparent;
+    color: #074f57;
+}
+
+/* Pesquisar icon */
+
+.form_searchCreci>button>i {
+    font-size: large;
+}
+
+.form_searchCreci>input[type=text] {
+    width: 80px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    /* Aqui */
+}
+
+.form_searchCreci>input[type=text]:focus {
+    width: 200px;
+}
+
+.form_searchCreci>input:invalid {
+    border: solid 0.5 gray;
+    background-color: none;
+    box-shadow: none;
+}
+
+@media(max-width:1040px) {
+    /* Desabilita campo de pesquisa do top *inserir no menu* */
+    .search_campoCreci .form_searchCreci {
+        display: none;
+    }
+}
+
+@media(max-width: 780px) {
+
+    /* GRID */
+    header .button-TVcreci,
+    .button-certificateCreci {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "header-logo header-button";
+    }
+
+    /* DESCE OS BOTÕES PARA A LINHA ABAIXO DO LOGO */
+    header .gridHeaderCreci {
+        display: block;
+    }
+
+    /* Logo */
+    header .button-logoCreci {
+        display: flex;
+        justify-content: center;
+        margin-top: -5px;
+    }
+
+    /* Botões */
+    header .buttons-fieldCreci {
+       display: flex;
+       justify-content: center;
+       margin-top: 20px;
+    }
+}
+@media(max-width: 414px){
+
+    /* LARGURA E TAMANHO DE FONTE DOS BOTÕES*/
+    .btn.red, .btn.blue,.btn.brown  {
+        width: 120px;
+        font-size: 10px;
+    }
+
+    /* ESPAÇAMENTO ENTRE OS BOTÕES*/
+    .btn.red, .btn.blue{
+        margin-right: 4px;
+    }
+
+    /* <p> TEXTO DE CADA BOTÃO */
+    a .tv-crecise{
+        margin-left: 5px;
+    }
+    
+    a .cert-regularidade{
+        margin-left: 1px;
+    }
+
+    a .bol-anuidade{
+        margin-left: 4px;
+    }
+}
+
+@media(max-width: 375px){
+
+    /* LARGURA E TAMANHO DE FONTE DOS BOTÕES*/
+    .btn.red, .btn.blue,.btn.brown  {
+        width: 110px;
+        font-size: 9.5px;
+        height: 50px;
+    }
+    /* ESPAÇAMENTO ENTRE OS BOTÕES*/
+    .btn.red, .btn.blue{
+        margin-right: 5px;
+
+    } 
+
+    /* <p> TEXTO DE CADA BOTÃO */
+    a .tv-crecise{
+        margin-left: 5px;        
+    }
+    
+    a .cert-regularidade{
+        margin-left: -3px;
+    }
+
+    a .bol-anuidade{
+        margin-left: 4px;      
+    }
+
+    /* ÍCONE */
+    header .buttons-fieldCreci i {
+        margin-top: 5px;
+    }
+}
+
+@media(max-width: 359px){
+
+    /* LARGURA E TAMANHO DE FONTE DOS BOTÕES*/
+    .btn.red, .btn.blue,.btn.brown  {
+        width: 96px;
+        font-size: 10px;
+    }
+
+    /* ESPAÇAMENTO ENTRE OS BOTÕES*/
+    .btn.red, .btn.blue{
+        margin-right: 2px;
+    }
+
+    /* LARGURA DO ESPAÇO ONDE O ÍCONE ESTÁ ALOCADO */
+    .btn.red span, .btn.blue span, .btn.brown span{
+        width: 30px;
+    }
+
+    /* ÍCONE */
+    header .buttons-fieldCreci i {
+        font-size: 20px;
+        margin-left: -2px;
+        margin-top: 4px;
+    }
+
+    /* REMOVENDO A SETA DOS BOTÕES */
+    .btn.red span:after, .btn.blue span:after, .btn.brown span:after{
+        width: 0;
+        height: 0;
+    }
+
+    /* <p> TEXTO DE CADA BOTÃO */
+    a .tv-crecise{
+        display: flex;
+        text-align: center;
+        margin-left: -12px;
+    }
+    
+    a .cert-regularidade{
+        display: flex;
+        text-align: center;
+        margin-left: -19px;
+    }
+
+    a .bol-anuidade{
+        display: flex;
+        text-align: center;
+        margin-left: -12px;
+    }    
+}

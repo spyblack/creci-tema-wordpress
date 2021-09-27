@@ -1,0 +1,179 @@
+/*galerry THUMB TV CRECI*/
+.galerry__thumb__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.galerry__thumb {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 4vw);
+    grid-gap: 1.5rem;
+    /* box-shadow: 0 0 5px  #074f57;  */
+}
+
+.galerry__thumb__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    box-shadow: 0 0 5px #074f57;
+}
+
+.galerry__thumb__item--2 {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    box-shadow: 0 0 5px #074f57;
+}
+
+.galerry__thumb__item--3 {
+    grid-column-start: 10;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    box-shadow: 0 0 5px #074f57;
+}
+
+.galerry__thumb__item--4 {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    box-shadow: 0 0 5px #074f57;
+}
+
+.galerry__thumb__item--5 {
+    grid-column-start: 10;
+    grid-column-end: 13;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    box-shadow: 0 0 5px #074f57;
+}
+
+/*TELA MENOR*/
+
+@media(max-width: 780px) {
+    .galerry__thumb {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 25vw);
+        grid-gap: 0.5rem;
+    }
+    .galerry__thumb__item--1 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .galerry__thumb__item--2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .galerry__thumb__item--3 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .galerry__thumb__item--4 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .galerry__thumb__item--5 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+}
+
+/* Zoom HOVER IMAGEM*/
+
+.hover-video figure:hover img {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: .20s ease-in-out;
+    transition: .20s ease-in-out;
+}
+
+.hover-video figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .20s ease-in-out;
+    transition: .20s ease-in-out;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+figure:hover {
+    bottom: -36px;
+    opacity: 1;
+}
+
+/*BOTÃO DA TV CRECI */
+
+.ButtonTVCRECI {
+    padding: 7px 6px;
+    font-size: 14px;
+    margin-top: 6px;
+    display:inline-block;
+    background: #ff0000;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.ButtonTVCRECI:hover {
+    background-color: #000;
+    box-shadow: none;
+  }
+  
+.ButtonTVCRECI:active {
+    background-color: #000;  
+    transform: translateY(2px);
+}
+
+/* TÍTULO ESPECÍFICO DA TV CRECI */
+.section-title-tv h2 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    line-height: 1;
+    color: #000;
+    margin-top: 6px;
+    border: 0;   
+  }
+
+/* BORDAS TOP E BOTTOM DA IMAGEM */
+.bgTvCRECI{
+    border-top: 5px ridge red;
+    border-bottom: 5px ridge black;
+}
+
+/* COR E HOVER DO ÍCONE DO YOUTUBE */
+.linha-tv{
+    color: #ff0000;
+    transition: all 0.3s;
+}
+

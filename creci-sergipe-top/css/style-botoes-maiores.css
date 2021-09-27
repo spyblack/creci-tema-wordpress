@@ -1,0 +1,185 @@
+/* CSS BOTÕES DESTAQUE */
+
+.modal.show {
+    top: 0;
+    opacity: 1;
+}
+
+.botoes-frontpage img {
+    width: 24%;
+    height: auto;
+    margin-right: 7px;
+    /* padding: 0px 10px 0px 10px; */
+}
+
+
+/* efeito fade out no modal */
+
+.fadeout-modal-custom {
+    -webkit-transition: all .30s linear !important;
+    -o-transition: all .30s linear !important;
+    transition: all .30s linear !important;
+    transform: scale(0) !important;
+}
+
+
+/* Cursor indica que a imagem é clicável */
+
+.img-clicavel {
+    cursor: pointer;
+}
+
+
+/* Todas as imagens dos modais ocuparão 100% dele */
+
+div .modal-body img {
+    width: 100%;
+}
+
+
+/* CONTEÚDO GERAL DO MODAL */
+
+.modal-content {
+    border: 0;
+    border-radius: 0;
+}
+
+
+/* HEADER DO MODAL */
+
+.modal-header {
+    background-color: #074f57;
+    border: 0;
+    border-radius: 0;
+}
+
+div .modal-header h5 {
+    color: white;
+    align-self: center;
+    display: flex;
+}
+
+
+/* BOTÃO FECHAR MODAL */
+
+.button-modal {
+    background: none;
+    border: 0;
+    box-sizing: border-box;
+    color: transparent;
+    cursor: pointer;
+    font-size: 10px;
+    left: 60px;
+    top: 15px;
+    letter-spacing: 1.5px;
+    line-height: 20px;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease-in;
+    width: 100px;
+}
+
+.button-modal::before,
+.button-modal::after {
+    background-color: white;
+    content: "";
+    /* display: block; */
+    height: 1px;
+    left: 0;
+    position: absolute;
+    transform-origin: center;
+    transition: all 0.2s ease-in;
+    width: 100px;
+    z-index: -1;
+}
+
+.button-modal::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.button-modal::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+}
+
+
+/* COR DO TEXTO DO HOVER */
+
+.button-modal:hover {
+    color: #074f57;
+}
+
+.button-modal:hover::before,
+.button-modal:hover::after {
+    height: 50px;
+    transform: rotate(0deg);
+}
+
+
+/* DIMINUI O TAMANHO DOS BOTÕES EM OUTRA RESOLUÇÕES DE TELA PAR QUE ELES FIQUEM OS 4 EM UMA LINHA SÓ OU 2 EM 2 EM DUAS LINHAS SEPARADAS*/
+
+@media (max-width: 1329px) {
+    .botoes-frontpage img {
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 992px) {
+    .botoes-frontpage img {
+        width: 22%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 937px) {
+    .botoes-frontpage img {
+        width: 22%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .botoes-frontpage img {
+        width: 46%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .botoes-frontpage img {
+        width: 44%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .botoes-frontpage img {
+        width: 46%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .botoes-frontpage img {
+        width: 46%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 587px) {
+    .botoes-frontpage img {
+        width: 45%;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 320px) {
+    .botoes-frontpage img {
+        width: 45%;
+        margin: 5px;
+    }
+}

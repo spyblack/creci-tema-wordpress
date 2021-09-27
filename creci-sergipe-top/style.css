@@ -1,0 +1,80 @@
+/*
+Theme Name: Tema CRECI-SERGIPE
+Theme URI: https://crecise.gov.br
+Author: Estagiários
+Author URI: https://crecise.gov.br
+Description: Tema para o site do CRECI-SE
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwenty
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Paginação da pesquisa */
+.paginationGeneralCreci {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 ;
+}
+.paginationGeneralCreci a {
+    text-decoration: none;
+}
+.paginationGeneralCreci .page-numbers {
+    padding: 5px 10px;
+    background: rgb(51, 50, 50);
+    color: #fff;
+    border-radius: 5px;
+    margin: 2px;
+}
+.paginationGeneralCreci a.page-numbers:hover {
+    background: rgb(83, 82, 82);
+}
+.paginationGeneralCreci .current {
+    background: #074f578c;
+    color: rgb(51, 50, 50);
+}
+
+/* .linha{
+    flex-direction: row;
+    display: flex;
+  } */
+
+.linha-tv{
+    flex-direction: row;
+    display: flex;
+}
+
+.botao-geral{
+    background: #0c6f7a;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    outline: none;
+    transition: all 0.1s;
+}
+
+.botao-geral:hover {
+    background-color: #074f57;
+    box-shadow: 0 0 3px 1px rgb(223, 222, 222);
+  }
+  
+  .botao-geral:active {
+    background-color: #0c6f7ab7;  
+    transform: translateY(2px);
+  }
+  

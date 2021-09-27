@@ -1,0 +1,300 @@
+.botoes-grid i {
+  float: left;
+  padding-top: 0px;
+  margin-right: 10px;
+  font-size: 2.3em;
+}
+
+
+
+.botoes-grid h4 {
+  float: left;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 17px;
+}
+/* ALTERA AS CORES DOS BOTÕES */
+.alterColor1{
+  color:#074F57;
+}
+.alterColor2{
+  color:#07606F;
+}
+.alterColor3{
+  color: #07697B;
+}
+.alterColor4{
+  color: #076D81;
+}
+.alterColor5{
+  color: #076F84;
+}
+.alterColor6{
+  color: #077086;
+}
+
+/* DIMINUI O TAMANHO DO ÍCONE E DA LETRA QUANDO EM TELAS COM 1620px */
+@media(max-width: 1620px){
+.botoes-grid a h4{
+  font-size: 13px;
+
+}
+.botoes-grid a i{
+  font-size: 30px;
+
+}
+}
+@media(max-width: 767px){
+.botoes-grid a h4{
+  font-size: 11px;
+
+}
+.botoes-grid a i{
+  font-size: 20px;
+
+}
+}
+
+.botoes-grid a {
+display: flex;
+align-items: center;
+
+
+}
+
+/*  BARRA LATERAL DOS TÍTULOS*/
+.section-title h2{
+  border-left: solid 7px #adb5bd; /* BORDA (ESQUERDA) AO LADO DE CADA ÍCONE */
+  padding-left: 5px;
+  transition: all 0.25s;
+}
+
+.section-title h2:hover {
+  border-left: solid 7px #077086;
+}
+/*  BARRA LATERAL DOS ÍCONES*/
+.botoes-grid i{
+border-left: solid 7px #adb5bd; /* BARRA (ESQUERDA) AO LADO DE CADA ÍCONE */
+padding-left: 5px;
+transition: all 0.25s;
+
+}
+.botoes-grid a:hover i{
+border-left: solid 7px #077086;
+
+
+}
+
+/* ------------------------------- */
+
+/* GRID BOTÕES DE ACESSO RÁPIDO */
+
+/*  DESKTOP */
+.botoes-grid{
+align-items: center;
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(1, 5vw);
+margin-top: 10px;
+margin-bottom: 20px;
+
+
+}
+
+.boletoat {
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 1;
+grid-row-end: 2;
+}
+
+.canaisat {
+grid-column-start: 2;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 2;
+}
+
+.appicorretor{
+grid-column-start: 3;
+grid-column-end: 4;
+grid-row-start: 1;
+grid-row-end: 2;
+}
+
+.convenio {
+grid-column-start: 4;
+grid-column-end: 5;
+grid-row-start: 1;
+grid-row-end: 2;
+}
+
+.portal {
+grid-column-start: 5;
+grid-column-end: 6;
+grid-row-start: 1;
+grid-row-end: 2; 
+}
+
+.amigoschevrolet {
+grid-column-start: 6;
+grid-column-end: 7;
+grid-row-start: 1;
+grid-row-end: 2;
+} 
+
+@media(max-width: 1082px) {
+.botoes-grid{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 8vw);
+    margin-left: 90px;
+}
+
+
+.boletoat {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.canaisat {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.appicorretor{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.convenio {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.portal {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3; 
+}
+
+.amigoschevrolet {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+} 
+}
+/* MOBILE */
+@media(max-width: 885px) {
+.botoes-grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 9vw);
+}
+
+.boletoat {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.canaisat {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.appicorretor{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.convenio {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.portal {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4; 
+}
+
+.amigoschevrolet {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+} 
+}
+@media(max-width: 750px) {
+.botoes-grid{
+    grid-template-rows: repeat(3, 10vw);
+}
+}
+
+@media(max-width: 660px) {
+.botoes-grid{
+    grid-template-rows: repeat(3, 12vw);
+}
+}
+
+@media(max-width: 560px) {
+.botoes-grid{
+    grid-template-rows: repeat(3, 14vw);
+}
+}
+@media(max-width: 479px) {
+  .botoes-grid{
+      margin-left: 50px;
+  }
+  }
+
+@media(max-width: 470px) {
+.botoes-grid{
+    grid-template-rows: repeat(3, 16vw);
+}
+}
+
+@media(max-width: 414px) {
+  .botoes-grid{
+      grid-template-rows: repeat(3, 11vw);
+      margin-left: 25px;
+  }
+  }
+
+@media(max-width: 375px) {
+.botoes-grid{
+    grid-template-rows: repeat(3, 15vw);
+    margin-left: 18px;
+}
+}
+
+@media(max-width: 360px) {
+  .botoes-grid{
+      grid-template-rows: repeat(3, 15vw);
+      margin-left: 15px;
+  }
+}
+
+@media(max-width: 320px) {
+  .botoes-grid{
+      grid-template-rows: repeat(3, 15vw);
+      margin-left: 4px;
+  }
+}

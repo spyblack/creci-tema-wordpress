@@ -1,0 +1,210 @@
+/* FAQ */
+
+
+/* GRIID DO FAQ E CLUBE DO CORRETOR */
+
+.grid-faq-club {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(1, 6vw);
+    margin-bottom: 100px;
+}
+
+
+/* GRID DO FAQ */
+
+.grid-faq {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    margin-right: 20px;
+}
+
+
+/* GRID DO CLUBE DO CORRETOR */
+
+.grid-club {
+    grid-column-start: 8;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+/* MARGIN TOP PARA ALINHAR BOTÃO 'IR PARA CLUBE DO CORRETOR' C O BOTÃO DO FAQ*/
+@media(max-width: 1440px){
+.espaco-alinhamento{
+    margin-top: 32px;
+    }
+}
+
+
+/*TELA MENOR*/
+
+@media(max-width: 600px) {
+    .grid-club {
+        margin-top: 40px;
+    }
+}
+
+@media(max-width: 780px) {
+    /* GRIID DO FAQ E CLUBE DO CORRETOR */
+    .grid-faq-club {
+        display: grid;
+        grid-template-columns: repeat(10, 10%);
+        grid-template-rows: repeat(2, 25vw);
+        margin-bottom: 20px;
+    }
+    /* GRID DO FAQ */
+    .grid-faq {
+        grid-column-start: 1;
+        grid-column-end: 11;
+        grid-row-start: 1;
+        grid-row-end: 6;
+        width: 100%;
+    }
+    /* GRID DO CLUBE DO CORRETOR */
+    .grid-club {
+        grid-column-start: 1;
+        grid-column-end: 11;
+        grid-row-start: 6;
+        grid-row-end: 6;
+    }
+
+    /* MARGIN TOP PARA ALINHAR BOTÃO 'IR PARA CLUBE DO CORRETOR' C O BOTÃO DO FAQ*/
+    .espaco-alinhamento{
+        margin-top: 0;
+    }
+    .botao-faq{
+        margin-bottom: 40px;
+    } 
+}
+
+p.accordion {
+    background-color: #e4ece5;
+    color: #000000;
+    /* Cor da DA LETRA do FAQ */
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom: 10px;
+    font-weight: bold;
+    /*TEXTO EM NEGRITTO*/
+}
+
+
+/* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+p.accordion.active,
+p.accordion:hover {
+    background-color: #c7c7c7;
+    /* Cor da seleção do FAQ */
+}
+
+
+/* Unicode character for "plus" sign (+) */
+
+p.accordion:after {
+    content: '\2795';
+    font-size: 14px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+
+/* Unicode character for "minus" sign (-) */
+
+p.accordion.active:after {
+    content: "\2796";
+}
+
+
+/* Style the element that is used for the panel class */
+
+div.panel {
+    padding: 0 18px;
+    background-color: rgb(243, 243, 243);
+    /* Fundo do texto FAQs*/
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+    margin-bottom: 0px;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+    /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+
+
+/*BOTÃO LEIA MAIS PERGUNTAS*/
+
+.botao-faq {
+    padding: 7px 6px;
+    font-size: 14px;
+    /* margin-top: 6px; */
+    display: inline-block;
+}
+
+
+/* Tamanho tablet */
+
+@media (min-width: 600px) {}
+
+
+/* Paginação da pesquisa */
+
+.paginacaoFAQ {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.paginacaoFAQ .page-numbers {
+    padding: 5px 10px;
+    background: #074f57;
+    color: #e4ece5;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.paginacaoFAQ a.page-numbers:hover {
+    background: #e4ece5;
+    color: rgb(51, 50, 50);
+}
+
+.paginacaoFAQ .current {
+    background: #e4ece5;
+    color: rgb(50, 50, 51);
+}
+
+
+/* IMAGEM CLUBE DO CORRETOR */
+
+.owl-carouselClube.img {
+    height: 200px;
+}
+
+.owl-carouselClube.img>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* EXIBE TODOS OS CAMPOS(NECESSÁRIOS) DO TEMA EM UMA ÚNICA LINHA */
+
+.linha-faq {
+    flex-direction: row;
+    display: block;
+    justify-content: center;
+    margin-bottom: 10px;
+}

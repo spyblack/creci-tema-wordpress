@@ -1,0 +1,199 @@
+/* GRIID INTRANET E REDES SOCIAIS*/
+
+.gridRedesSociaisIntranet {
+    display: grid;
+    grid-template-columns: repeat(10, 13%);
+    grid-template-rows: repeat(1, 1vw);
+}
+
+/* GRID REDES SOCIAIS */
+
+.redesSociaisHeader {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+/* GRID INTRANET */
+
+.menuIntranetCreci {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+/*Barra total do header*/
+
+section.section_redesSociaisIntranet {
+    background: rgba(36, 36, 36, 0.938);
+    height: 25px;
+}
+
+/* título do menu */
+
+.title-intranet li a {
+    margin-top: 2px;
+    text-align: left;
+    color: #fff;
+    font-size: 13px;
+    transition: all 0.3s;
+}
+
+/* CLASSE GERAL DROPDOWN */
+
+.dropdown-menuIntranet {
+    display: none;
+    background-color: rgb(48, 47, 47);
+    z-index: 99999;
+    padding: 0px 4px 4px 4px;
+    position: absolute;
+}
+
+.dropdown-menuIntranet a {
+    padding: 2px;
+    background: rgb(48, 47, 47);
+    display: block;
+    transition: 1s ease-out;
+    padding: 0px 4px 4px 4px;
+}
+
+/*HOVER INTRANET*/
+
+.dropdown-menuIntranet a:hover {
+    background: rgb(95, 91, 91);
+}
+
+/* INICIO - Redes sociais Configuração para todos os icons */
+
+.redesSociaisHeader a {
+    color: #fff;
+    padding-right: 5px;
+    transition: color 0.2s;
+    font-size: 0.8rem;
+}
+
+.redesSociaisHeader span {
+    padding-right: 5px;
+    font-size: 0.8rem;
+}
+
+/* Configuração individual de redes sociais */
+
+.redesSociaisHeader .rede_youtubeCreci:hover {
+    color: #f14343;
+}
+
+.redesSociaisHeader .rede_facebookCreci:hover {
+    color: #3c8cf5;
+}
+
+.redesSociaisHeader .rede_twitterCreci:hover {
+    color: #1da1f2;
+}
+
+.redesSociaisHeader .rede_instagramCreci:hover {
+    color: rgb(230, 164, 208);
+}
+
+/* Contatos */
+
+.redesSociaisHeader .contact_telefoneCreci {
+    font-size: 14px;
+}
+.redesSociaisHeader .contact_emailCreci:hover {
+    color: #90f195;
+}
+
+/* Tirando o sublinhado os icons */
+
+.redesSociaisHeader a {
+    text-decoration: none;
+}
+
+.menuIntranetCreci a {
+    text-decoration: none;
+}
+
+/*OUTRAS RESOLUÇÕES*/
+
+@media(max-width: 500px) {
+    /* DESAPARECER O MENU INTRANET*/
+    .menuIntranetCreci {
+        display: none;
+    }
+    .redesSociaisHeader {
+        justify-self: center;
+        text-align: center;
+    }
+}
+
+@media(max-width: 763px) {
+    /*GRID REDES SOCIAIS E INTRANET*/
+    .gridRedesSociaisIntranet {
+        display: grid;
+        grid-template-columns: repeat(10, 14%);
+        grid-template-rows: repeat(1, 1vw);
+    }
+    /* GRID REDES SOCIAIS */
+    .redesSociaisHeader {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    /* GRID INTRANET */
+    .menuIntranetCreci {
+        grid-column-start: 7;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+}
+
+@media(max-width: 708px) {
+    /*GRID REDES SOCIAIS E INTRANET*/
+    .gridRedesSociaisIntranet {
+        display: grid;
+        grid-template-columns: repeat(10, 16%);
+        grid-template-rows: repeat(1, 1vw);
+    }
+    /* GRID REDES SOCIAIS */
+    .redesSociaisHeader {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    /* GRID INTRANET */
+    .menuIntranetCreci {
+        grid-column-start: 6;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+}
+
+@media(max-width: 620px) {
+    /*GRID REDES SOCIAIS E INTRANET*/
+    .gridRedesSociaisIntranet {
+        display: grid;
+        grid-template-columns: repeat(10, 20%);
+        grid-template-rows: repeat(1, 1vw);
+    }
+    /* GRID REDES SOCIAIS */
+    .redesSociaisHeader {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    /* GRID INTRANET */
+    .menuIntranetCreci {
+        grid-column-start: 5;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+}
